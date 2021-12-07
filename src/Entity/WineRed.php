@@ -5,9 +5,13 @@ namespace App\Entity;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\WineRedRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
- * @ApiResource()
+ * @ApiResource(
+ *      normalizationContext={"groups"={"wine:read"}},
+ *      denormalizationContext={"groups"={"wine:write"}}
+ * )
  * @ORM\Entity(repositoryClass="App\Repository\WineRedRepository")
  */
 class WineRed
@@ -16,41 +20,53 @@ class WineRed
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups("wine:read")
+     * 
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"wine:read", "wine:write"})
      */
     private $title;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"wine:read", "wine:write"})
      */
     private $origin;
 
      /**
      * @ORM\Column(type="decimal", precision=5, scale=2)
+     * @Groups({"wine:read", "wine:write"})
      */
     private $liters;
      /**
      * @ORM\Column(type="decimal", precision=5, scale=2)
+     * @Groups({"wine:read", "wine:write"})
      */
     private $prices;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"wine:read", "wine:write"})
      */
     private $wine_year;
+
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"wine:read", "wine:write"})
      */
     private $email;
 
     /**
      * @ORM\Column(type="datetime")
+     * @Groups("wine:read")
      */
     private $published_date;
+
+    
 
     public function getId(): ?int
     {
@@ -105,12 +121,12 @@ class WineRed
         return $this;
     }
 
-    public function getWineYear(): ?int
+    public function getWineYear(): ?string
     {
         return $this->wine_year;
     }
 
-    public function setWineYear(int $wine_year): self
+    public function setWineYear(string $wine_year): self
     {
         $this->wine_year = $wine_year;
 

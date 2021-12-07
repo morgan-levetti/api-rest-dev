@@ -1,0 +1,5 @@
+id,title,origin,liters,prices,wine_year,email,published_date
+4,bordeaux,bordeaux,1.00,10.00,10,ferfer,0000-00-00 00:00:00
+5,bordeaux,bordeaux,1.00,1.00,10,ferferfe,2021-12-01 13:02:50
+6,bordeauxdeux,cher moi,1.00,100.00,1900,string@hotmail.com,2021-12-01 13:05:00
+7,string,string,2.45,59.40,0,string,2021-12-01 15:07:06
