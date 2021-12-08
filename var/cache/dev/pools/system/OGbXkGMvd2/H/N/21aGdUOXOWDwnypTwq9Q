@@ -1,3 +1,0 @@
-<?php //route_name_91b7571fa1b41d2b93cb52be9868d5c6
-
-return [PHP_INT_MAX, 'api_wine_reds_get_item'];
