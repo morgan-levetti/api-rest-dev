@@ -18,3 +18,5 @@
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+var/cache/dev/profiler/index.csv
+var/cache/dev/profiler/57/e0/50e057
