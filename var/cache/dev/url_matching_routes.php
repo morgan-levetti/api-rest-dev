@@ -13,7 +13,14 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/' => [[['_route' => 'home_page', '_controller' => 'App\\Controller\\HomePageController::home'], null, null, null, false, false, null]],
+        '/' => [
+            [['_route' => 'home_page', '_controller' => 'App\\Controller\\HomePageController::home'], null, null, null, false, false, null],
+            [['_route' => 'index', '_controller' => 'App\\Controlle'], null, null, null, false, false, null],
+        ],
+        '/wine_red' => [[['_route' => 'wine_red', '_controller' => 'App\\Controller\\HomePageController::wine_red'], null, null, null, false, false, null]],
+        '/wine_rose' => [[['_route' => 'wine_rose', '_controller' => 'App\\Controller\\HomePageController::wine_rose'], null, null, null, false, false, null]],
+        '/wine_white' => [[['_route' => 'wine_white', '_controller' => 'App\\Controller\\HomePageController::wine_white'], null, null, null, false, false, null]],
+        '/collection_wine' => [[['_route' => 'collection_wine', '_controller' => 'App\\Controller\\HomePageController::collection_wine'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

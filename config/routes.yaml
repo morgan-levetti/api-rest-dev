@@ -1,3 +1,35 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+   path: /
+   controller: App\Controlle
+# wine_red:
+#    path: /wine_red
+#    controller: App\Controller\HomePageController::index
+
+#wine_white:
+#    path: /wine_white
+#    controller: App\Controller\WineWhiteController::index
+
+#wine_rose:
+#    path: /wine_rose
+#    controller: App\Controller\WineRoseController::index
+
+#admin:
+#    path: /admin
+#    controller: App\Controller\AdminController::index
+
+#producteur:
+#    path: /producteur
+#    controller: App\Controller\ProducteurController::index
+
+#collection_wine/wine_red:
+#    path: collection_wine/wine_red
+#    controller: App\Controller\WineRedController::index
+
+#collection_wine/wine_rose:
+#    path: collection_wine/wine_rose
+#    controller: App\Controller\WineRoseController::index
+
+#collection_wine/wine_white:
+#    path: collection_wine/wine_white
+#    controller: App\Controller\WinewhiteController::index
+

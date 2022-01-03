@@ -85,20 +85,15 @@ class __TwigTemplate_340f6413499bfdbacdfe245dfb6b5c16903394d33e8e12dbc9f150117ec
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-    .title_header {display: flex; width: 100%; border: solid red; font-size: 2.5rem; align-items: center; text-align: center; justify-content: space-around; background-color: #dd5959;}
-    .main_img { height: 100px;}
-    .main {display: flex; width: 100%; border: solid red; font-size: 2.5rem; align-items: center; text-align: center; justify-content: space-around; background-color: #dd5959;}
-</style>
-
-    <header>
+        echo "    <header>
         <div class=\"title_header\">
             <h1>Wine App!</h1>
                 <li>
-                    <ul class=\"connexion_header\"><a href=\"#\">Connexion</a></ul>
-                    <ul class=\"connexion_header\"><a href=\"#\">Inscription</a></ul>
+                    <ul class=\"connexion_header\"><a href=\"/wine_red\">wine Red</a></ul>
+                    <ul class=\"connexion_header\"><a href=\"/wine_rose\">wine Rose</a></ul>
+                    <ul class=\"connexion_header\"><a href=\"/wine_white\">wine white</a></ul>
+                    <ul class=\"connexion_header\"><a href=\"/collection_wine\">collection</a></ul>
+                    
                     <p>Espace Pro</p>
                 </li>
         </div>
@@ -136,20 +131,15 @@ class __TwigTemplate_340f6413499bfdbacdfe245dfb6b5c16903394d33e8e12dbc9f150117ec
 {% block title %}Wine App{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-    .title_header {display: flex; width: 100%; border: solid red; font-size: 2.5rem; align-items: center; text-align: center; justify-content: space-around; background-color: #dd5959;}
-    .main_img { height: 100px;}
-    .main {display: flex; width: 100%; border: solid red; font-size: 2.5rem; align-items: center; text-align: center; justify-content: space-around; background-color: #dd5959;}
-</style>
-
     <header>
         <div class=\"title_header\">
             <h1>Wine App!</h1>
                 <li>
-                    <ul class=\"connexion_header\"><a href=\"#\">Connexion</a></ul>
-                    <ul class=\"connexion_header\"><a href=\"#\">Inscription</a></ul>
+                    <ul class=\"connexion_header\"><a href=\"/wine_red\">wine Red</a></ul>
+                    <ul class=\"connexion_header\"><a href=\"/wine_rose\">wine Rose</a></ul>
+                    <ul class=\"connexion_header\"><a href=\"/wine_white\">wine white</a></ul>
+                    <ul class=\"connexion_header\"><a href=\"/collection_wine\">collection</a></ul>
+                    
                     <p>Espace Pro</p>
                 </li>
         </div>

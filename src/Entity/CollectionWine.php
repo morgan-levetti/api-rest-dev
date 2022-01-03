@@ -10,6 +10,14 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ApiResource()
+ * @ORM\Entity(repositoryClass="App\Repository\WineWhiteRepository")
+ */
+/**
+ * @ApiResource()
+ * @ORM\Entity(repositoryClass="App\Repository\WineRoseRepository")
+ */
+/**
+ * @ApiResource()
  * @ORM\Entity(repositoryClass="App\Repository\WineRedRepository")
  */
 class CollectionWine
